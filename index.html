@@ -13,12 +13,10 @@
             <span id="horas">00</span>
             <span class="tempo">Horas</span>
         </div>
-        
         <div>
             <span id="minutos">00</span>
             <span class="tempo">Minutos</span>
         </div>
-
         <div>
             <span id="segundos">00</span>
             <span class="tempo">Segundo</span>
@@ -26,4 +24,31 @@
     </div>    
 
 </body>
+
+<script>
+
+    const horas = document.getElementById('horas');
+    const minutos = document.getElementsByClassName('minutos');
+    const segundos = document.getElementById('segundos');
+
+    const relogio = setInterval(function time() {
+    let datetoday = new Date();
+    let hr = datetoday.getHours();
+    let min = datetoday.getMinutes();
+    let sec = datetoday.getSeconds();
+
+    if (hr < 10) hr = '0' + hr;
+
+    if (min < 10) hr = '0' + min;
+
+    if (sec < 10) = '0' + sec;
+
+    horas.textContent = hr;
+    minutos.textContent = min;
+     segundos.textContent = sec;
+
+    })
+
+</script>
+
 </html>
