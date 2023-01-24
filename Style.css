@@ -21,6 +21,8 @@ body{
     background: transparent; 
     border-radius: 6px;
     box-shadow: 0px 8px 10px rgba( 0, 0, 0,5);
+    padding-left: 10px;
+    padding-right: 10px;
     
 }
 
